@@ -14,7 +14,8 @@ let preview = PicturePreview(imageURLs: [
             "http://img04.taobaocdn.com/imgextra/i4/811709710/T2QTCAXztaXXXXXXXX_!!811709710.png",
              "http://img06.tooopen.com/images/20170104/tooopen_sy_195537872451.jpg",
              "http://media.148apps.com/screenshots/1126309405/us-iphone-1-61.jpeg"], index: 1)
-        preview.show()
+        
+preview.show()
         
 ## Requirements
 
