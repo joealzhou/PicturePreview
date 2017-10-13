@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PicturePreview'
-  s.version          = '0.1.3'
+  s.version          = '0.1.7'
   s.summary          = '图片预览.'
 
 # This description is used to generate tags and improve search results.

@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+
 extension UIImage {
     /**
      使用颜色实例化图片，大小为1像素
@@ -44,7 +45,7 @@ extension UIImage {
     }
 }
 
-public class PicturePreview: UIView, UIScrollViewDelegate {
+open class PicturePreview: UIView, UIScrollViewDelegate {
     private let blackImage = UIImage(color: UIColor.black)
     private var title: UILabel = UILabel()
     private var imageScrollView: UIScrollView = UIScrollView()
@@ -59,7 +60,7 @@ public class PicturePreview: UIView, UIScrollViewDelegate {
         super.init(frame: frame)
     }
     
-    convenience init(imageURLs: [String], index: Int) {
+    public convenience init(imageURLs: [String], index: Int) {
         let mainWindow: UIWindow =
             UIApplication.shared.keyWindow! as UIWindow
         self.init(frame: mainWindow.frame)

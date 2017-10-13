@@ -1,5 +1,5 @@
 PODS:
-  - PicturePreview (0.1.4):
+  - PicturePreview (0.1.6):
     - SDWebImage
   - SDWebImage (4.1.2):
     - SDWebImage/Core (= 4.1.2)
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PicturePreview: c1af3ca423b7d8d5ce46669ee03a39f43bf4425d
+  PicturePreview: bafb8ffb62f6b6ee6f81705d0e1198bf96a6652b
   SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
 
 PODFILE CHECKSUM: 231e571428bbe9ca37b93846fec6e90014f47e2d
