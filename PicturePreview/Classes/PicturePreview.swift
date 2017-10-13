@@ -78,7 +78,7 @@ public class PicturePreview: UIView, UIScrollViewDelegate {
         self.initGestures()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -299,22 +299,8 @@ public class PicturePreview: UIView, UIScrollViewDelegate {
             
         }
     }
-    
-//    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-//        let translation = scrollView.panGestureRecognizer.translationInView(scrollView).x
-//        if translation < 0 {
-//            if self.indexOfCurrentPage < self.imageURLs.count {
-//                self.indexOfCurrentPage += 1
-//            }
-//        } else {
-//            if self.indexOfCurrentPage > 1 {
-//                self.indexOfCurrentPage -= 1
-//            }
-//        }
-//        self.updateNumberTitle()
-//    }
 
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if scrollView === imageScrollView {
             let imageSV = allImageView[indexOfCurrentPage -   1]
             if let imgv = imageSV.subviews.first as? UIImageView {
@@ -328,7 +314,7 @@ public class PicturePreview: UIView, UIScrollViewDelegate {
         }
     }
 
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView === imageScrollView {
             let page = (scrollView.contentOffset.x + scrollView.bounds.size.width / 2) / scrollView.bounds.size.width
             
@@ -351,7 +337,7 @@ public class PicturePreview: UIView, UIScrollViewDelegate {
         }
     }
     
-    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint,
+    public func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint,
         targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         
     }
@@ -373,7 +359,8 @@ public class PicturePreview: UIView, UIScrollViewDelegate {
         }
     }
     
-    internal func show() {
+    /// 展示
+    public func show() {
         let mainWindow: UIWindow =
             UIApplication.shared.keyWindow! as UIWindow
         mainWindow.addSubview(self)
