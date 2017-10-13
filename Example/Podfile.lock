@@ -1,0 +1,16 @@
+PODS:
+  - PicturePreview (0.1.0)
+
+DEPENDENCIES:
+  - PicturePreview (from `../`)
+
+EXTERNAL SOURCES:
+  PicturePreview:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PicturePreview: 1da0e6fee2d637c56ac00ba60121e6871a5f3994
+
+PODFILE CHECKSUM: 231e571428bbe9ca37b93846fec6e90014f47e2d
+
+COCOAPODS: 1.2.1
