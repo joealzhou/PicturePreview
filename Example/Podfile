@@ -1,0 +1,6 @@
+use_frameworks!
+target 'PicturePreview_Tests' do
+  pod 'PicturePreview', :path => '../'
+  
+  
+end
