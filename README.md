@@ -27,6 +27,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'PicturePreview'
 ```
+其实只要把PicturePreview文件拖到工程中就可以使用了，不需要在pod中添加。我只是试一下发布流程(*^__^*) 嘻嘻……
 
 ## Author
 
