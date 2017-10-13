@@ -44,7 +44,7 @@ extension UIImage {
     }
 }
 
-class PicturePreview: UIView, UIScrollViewDelegate {
+public class PicturePreview: UIView, UIScrollViewDelegate {
     private let blackImage = UIImage(color: UIColor.black)
     private var title: UILabel = UILabel()
     private var imageScrollView: UIScrollView = UIScrollView()
